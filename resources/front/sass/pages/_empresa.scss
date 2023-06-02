@@ -1,0 +1,53 @@
+#empresa {
+    .mvv-card {
+        .icon {
+            color: $primary;
+            @include linear-rfs(3rem, 5rem, 375px, 1920px, "max-width");
+        }
+    }
+
+    .gallery-wrapper {
+        @include media-breakpoint-up(lg) {
+            float: right;
+        }
+    }
+
+    .overflow-x-clip {
+        overflow-x: clip;
+    }
+
+
+
+    .bg-custom {
+        background: rgba(98, 107, 83, 0.85);
+    }
+
+    .form-control2 {
+        &::placeholder {
+            color: white;
+        }
+    }
+}
+
+.elevar-card {
+    @media(min-width: 992px) {
+        margin-top: -50px;
+    }
+
+}
+
+.sustentabilidade-titulo {
+    margin-top: -50px;
+
+    @media(max-width: 1600px) {
+        margin-top: -35px;
+    }
+
+    @media(max-width: 1200px) {
+        margin-top: -25px;
+    }
+
+    @media(max-width: 450px) {
+        font-size: 32px !important;
+    }
+}

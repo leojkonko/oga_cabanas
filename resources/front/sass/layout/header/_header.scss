@@ -1,0 +1,99 @@
+.header {
+    z-index: $zindex-header;
+
+    &-logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    & .container {
+
+        background: rgba(0, 0, 0, 0.6);
+        backdrop-filter: blur(30px);
+    }
+
+    .menu {
+        a {
+            padding: 0.25rem 0.75rem;
+            border-radius: $border-radius-sm;
+
+            &.active {
+                background-color: rgba($primary, 0.1);
+            }
+        }
+    }
+
+
+}
+
+.top-0 {
+    top: 0 !important;
+}
+
+.top-initial {
+    top: 4%;
+
+    @media(max-width: 1400px) {
+        top: 2%;
+    }
+
+    @media(max-width: 992px) {
+        top: 0.7%;
+    }
+}
+
+.top-company {
+    top: 2%;
+
+    @media(max-width: 1400px) {
+        top: 1%;
+    }
+
+    @media(max-width: 992px) {
+        top: 0.5%;
+    }
+}
+
+.top-home {
+
+    @media(min-width: 1600px) {
+        top: 16%;
+    }
+
+    @media(max-width: 1600px) {
+        top: 14%;
+    }
+
+    @media(max-width: 1300px) {
+        top: 12%;
+    }
+
+    @media(max-width: 1200px) {
+        top: 0.25%;
+    }
+
+    @media(max-width: 992px) {
+        top: 0.25%;
+    }
+}
+
+.breadcrumb-position {
+    @media(min-width: 992px) {
+        //transform: translate(0%, 80%);
+    }
+
+    .container-breadcrumb {
+        margin-top: 20%;
+
+        @media(max-width: 1200px) {
+            margin-top: 32%;
+        }
+
+        @media(max-width: 450px) {
+            margin-top: 36%;
+        }
+
+        @media(max-width: 450px) {
+            margin-top: 40%;
+        }
+    }
+}

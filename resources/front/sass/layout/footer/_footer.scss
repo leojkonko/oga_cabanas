@@ -1,0 +1,60 @@
+#footer {
+    .logo {
+        @include linear-rfs(10rem, 15rem, 375px, 1920px, "width");
+    }
+
+    .address {
+        width: 100%;
+    }
+
+    .copyright {
+        border-top: 2px solid $dark-claro;
+    }
+
+    .mt-logo-footer {
+        @media(min-width: 992px) {
+            margin-top: -100px;
+        }
+    }
+
+    .link-redes {
+        &:hover {
+            background-color: #626B53;
+            transition: background-color 0.25s ease-in-out;
+
+            & svg {
+                stroke: white;
+
+                & path {
+                    fill: white;
+                    stroke: white;
+                    transition: stroke 0.25s ease-in-out, fill 0.25s ease-in-out;
+                }
+            }
+        }
+    }
+
+    .svg-footer {
+        @include linear-rfs(-10rem, -15rem, 375px, 1920px, "left");
+
+        @media(max-width: 1700px) {
+            left: -15%;
+        }
+
+        @media(max-width: 1600px) {
+            left: -24%;
+        }
+
+        @media(max-width: 1400px) {
+            left: -26%;
+        }
+
+        @media(max-width: 1300px) {
+            left: -29%;
+        }
+
+        @media(max-width: 1200px) {
+            left: 0%;
+        }
+    }
+}

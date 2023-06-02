@@ -1,0 +1,49 @@
+/*.swiper-slide {
+    width: 80%;
+}
+
+.swiper-slide:nth-child(2n) {
+    width: 60%;
+}
+
+.swiper-slide:nth-child(3n) {
+    width: 40%;
+}*/
+
+.cabanas-swiper {
+    .swiper-slide {
+        width: 80%;
+        margin: auto;
+        margin-left: 0px;
+        z-index: 1;
+    }
+
+    .swiper-slide-next {
+        width: 60%;
+        margin: auto 0px;
+        margin-left: -100px;
+        z-index: -1;
+    }
+
+    #item {
+        cursor: pointer;
+    }
+
+
+}
+
+.selected {
+    background: #2B2B2B;
+
+    & span {
+        & svg {
+            display: block !important;
+            top: 12px;
+            left: 10px;
+        }
+    }
+
+    & p {
+        color: white;
+    }
+}
