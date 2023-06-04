@@ -65,11 +65,13 @@
         </section>
 <section class="py-lg-4 py-2 bg-dark-claro">
     <div class="container">
-        <h2 class="h2-80 fw-400 text-lg-start text-white text-center mb-2">Surgiu alguma dúvida? <br><span class="fw-800">CONTATE-NOS</span></h2>
+        <h2 class="h2-80 fw-400 text-lg-start text-white text-center mb-2" data-aos="fade-right">Surgiu alguma dúvida? <br><span class="fw-800">CONTATE-NOS</span></h2>
     </div>
 </section>
 
-        <section class="contato  mt-0" >
+        <section class="contato  mt-0" data-aos="fade-down"
+        data-aos-easing="linear"
+        data-aos-duration="2500">
             <div class="container position-relative">
                 <div class="row">
                     <div class="col-lg-6 ms-auto position-lg-absolute z-index-2 end-0" >

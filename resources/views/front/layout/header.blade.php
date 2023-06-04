@@ -34,7 +34,7 @@
 
     {{-- Front css --}}
     @vite(['resources/front/sass/vendors/bootstrap/bootstrap.scss', 'resources/front/sass/main.scss'])
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <x-head-tags />
     @livewireStyles
 </head>

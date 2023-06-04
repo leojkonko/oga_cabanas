@@ -7,7 +7,7 @@
         <section class="atuacao py-lg-4 pb-2 overflow-hidden">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-lg-7 ">
+                    <div class="col-lg-7 " data-aos="fade-right">
                         <div class="position-relative h-100 w-100 d-flex align-items-center justify-content-center">
                             <div class="">
                                 <h2 class="p-400 h2-80 fw-400 mb-lg-2 text-lg-start text-center ps-lg-4 mt-1 mb-1">Cabana <br> <span class="fw-800">PREMIUM</span></h2>
@@ -25,7 +25,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 position-relative ">
+                    <div class="col-lg-5 position-relative " data-aos="fade-left">
                         <div class="overflow-x-clip overflow-hidden cabanas-swiper">
                             <div class="swiper-wrapper pb-4">
                                 @foreach (range(0,10) as $banner)
@@ -61,7 +61,9 @@
                           $h = 0;  
                         @endphp
                         @foreach (range(0,3) as $item)
-                            <div class="col-lg-2 col-md-4 col-6 m-auto">
+                            <div class="col-lg-2 col-md-4 col-6 m-auto" data-aos="fade-down"
+                            data-aos-easing="linear"
+                            data-aos-duration="1500">
                                 <div class="ratio ratio-1x1">
                                     <img class="object-fit-cover w-100 h-100" src="{{ asset("front/images/backgrounds/cores-detalhe.png") }}" alt="">
                                 </div>
@@ -140,7 +142,7 @@
             <div class="container container-start">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="ps-lg-4 py-lg-4 py-2 bg-secondary pe-lg-4">
+                        <div class="ps-lg-4 py-lg-4 py-2 bg-secondary pe-lg-4" data-aos="zoom-in-right">
                             <div class="formulario rounded-3 p-2">
                                 <h2 class="h2-80 fw-400 text-lg-start text-center mb-2">Quer mais <br><span class="fw-800">INFORMAÇÕES?</span></h2>
                                 <form wire:submit.prevent="send" class="row g-1">
@@ -182,7 +184,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 bg-white d-none d-lg-block">
+                    <div class="col-lg-3 bg-white d-none d-lg-block" data-aos="flip-down">
                         <div class=" my-auto h-100 d-flex align-items-center">
                             <svg style="margin-left: -25px;" class="" width="504" height="925" viewBox="0 0 504 925" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="504" height="925" fill="#626B53"/>

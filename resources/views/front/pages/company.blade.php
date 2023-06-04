@@ -16,12 +16,12 @@
                             {{--<svg class="position-absolute top-50 start-5 translate-middle-y" width="150" height="150" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="150" height="150" fill="#626B53"/>
                             </svg>--}}  
-                            <div class="ratio ratio-1x1">
+                            <div class="ratio ratio-1x1" data-aos="zoom-in-right">
                                 <img class="object-fit-cover w-100 h-100 ps-lg-4" src="{{ asset("front/images/backgrounds/empresa.png") }}" alt="">
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-7 ">
+                    <div class="col-lg-7 " data-aos="zoom-in-left">
                         <div class="position-relative h-100 w-100 ms-xxl-4 ps-xxl-4 d-flex align-items-center justify-content-center">
                                
                             <div class="ms-lg-4">
@@ -47,14 +47,14 @@
         <x-diferentials />
         <section class="sustentabilidade overflow-hidden" style="margin-top: -2px;">
             <div class="ratio ratio-md-39 ratio-1x1">
-                <img class="object-fit-cover w-100 h-100 z-index-background" src="{{ asset("front/images/backgrounds/sustentabilidade.png") }}" alt="">
+                <img class="object-fit-cover w-100 h-100 z-index-background" src="{{ asset("front/images/backgrounds/sustentabilidade.png") }}" alt="" data-aos="flip-up">
                 <div class="{{--start-50 top-50 translate-middle-x position-absolute--}}">
                     <div class="position-absolute bottom-0 m-auto w-100">
                         <div class="container">
                             <div class="row">
                                 <div class="col-12 bg-custom m-auto">
                                     <div class="row">
-                                        <div class="col-lg-10 m-auto position-relative">
+                                        <div class="col-lg-10 m-auto position-relative" data-aos="fade-down-right">
                                             <h2 class="fw-800 h2-115 text-center mt-2 mt-lg-0 text-white sustentabilidade-titulo">SUSTENTABILIDADE</h2>
                                             <p class="p-22 fw-400 text-white ps-lg-4 mt-2 mt-lg-2 mb-lg-12 mb-4 text-center text-lg-start">
                                                 O Lorem Ipsum é um texto modelo da indústria tipográfica e de impressão. O Lorem Ipsum tem vindo a ser o texto padrão usado por estas indústrias desde o ano de 1500, 
@@ -77,7 +77,7 @@
             <div class="container container-start">
                 <div class="row">
                     <div class="col-lg-9">
-                        <div class="ps-lg-4 py-lg-4 py-2 bg-dark-claro pe-lg-4">
+                        <div class="ps-lg-4 py-lg-4 py-2 bg-dark-claro pe-lg-4" data-aos="fade-down-right">
                             <div class="formulario rounded-3 p-sm-2 p-1">
                                 <h2 class="h2-80 fw-400 text-white text-lg-start text-center mb-2">Quer mais <br><span class="fw-800">INFORMAÇÕES?</span></h2>
                                 <form wire:submit.prevent="send" class="row g-1">
@@ -119,7 +119,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-3 bg-white d-none d-lg-block ">
+                    <div class="col-lg-3 bg-white d-none d-lg-block " data-aos="flip-up">
                         <div class=" my-auto h-100 d-flex align-items-center">
                             <svg style="margin-left: -25px;" class="" width="504" height="925" viewBox="0 0 504 925" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <rect width="504" height="925" fill="#626B53"/>

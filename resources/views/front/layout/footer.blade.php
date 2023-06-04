@@ -1,12 +1,13 @@
 <footer id="footer" class="overflow-hidden position-relative">
     <div class="container position-relative">
         <div class="row gy-2 gy-lg-0 text-center text-lg-start align-items-center justify-content-between py-2 py-lg-4 mb-lg-2">
-            <div class="position-relative col-lg-12">
+            <div class="position-relative col-lg-12" data-aos="zoom-out-down">
                 <h2 class="h2-80 fw-400 mb-lg-1 mt-lg-3">Tem interesse? <br>
                     <span class="fw-800">FALE CONOSCO</span>
                 </h2>
             </div>
-            <div class="col-xl-5 col-xxl-5 col-lg-5 d-flex justify-content-center justify-content-xl-center justify-content-xxl-end">
+            <div class="col-xl-5 col-xxl-5 col-lg-5 d-flex justify-content-center justify-content-xl-center justify-content-xxl-end" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
                 <div class="ps-xl-8">
                     <h6 class="p-24 fw-700">Contatos:</h6>
                     <ul class="list-unstyled">
@@ -27,7 +28,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-2 col-lg-2  d-flex justify-content-center">
+            <div class="col-xl-2 col-lg-2  d-flex justify-content-center" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
                 <div>
                     <h6 class="p-24 fw-700">Menu</h6>
                     <ul class="list-unstyled">
@@ -46,7 +48,8 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-xl-4 col-xxl-3 col-lg-5  d-flex justify-content-center">
+            <div class="col-xl-4 col-xxl-3 col-lg-5  d-flex justify-content-center" data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom">
                 <div class="position-relative mb-2 mb-lg-0">
                     <a href="{{ route_lang('home') }}" class="d-block logo m-auto m-lg-0 mt-logo-footer">
                         <img class="object-fit-contain w-100 h-100" src="{{ asset('front/images/logos/logo-restrita-auth.svg') }}" title="Página principal" alt="Logo {{ env('APP_NAME') }}">
@@ -89,7 +92,8 @@
             </div>
         </div>
     </div>
-    <div class="py-1 copyright ">
+    <div class="py-1 copyright " data-aos="fade-up"
+    data-aos-anchor-placement="center-bottom">
         <div class="container">
             <div class="d-flex flex-column flex-lg-row text-center text-lg-start gap-1 justify-content-center align-items-center justify-content-sm-between">
                 <small class="small text-dark-claro text-decoration-none">Copyright &copy{{ date('Y') }} {{ env('APP_NAME') }}. Todos os direitos reservados. CNPJ 00.000.000/0000-00</small>
@@ -120,7 +124,7 @@
 {{-- Jquery --}}
 <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.16/jquery.mask.min.js" integrity="sha512-pHVGpX7F/27yZ0ISY+VVjyULApbDlD0/X0rgGbTqCE7WFW5MezNTWG/dnhtbBuICzsd0WQPgpE4REBLv+UqChw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 {{-- Swiper.js --}}
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.2.0/swiper-bundle.min.js" integrity="sha512-KBCt3sdFOcFtYTgEfE3uJckVpvPr1w8HPugyPgHFE/4iJOwhwj6eSaF27bDJTHRX2jyAFOgV3Ve9vOD97rbjrg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
@@ -134,6 +138,13 @@
 @vite(['resources/front/js/vendors/bootstrap.bundle.min.js', 'resources/front/js/main.js'])
 
 @livewireScripts
+
+
+<script>
+  AOS.init();
+</script>
+
+
 <script>
     // Obtenha todos os elementos com a classe "fundo"
 var elementos = document.getElementsByClassName("fundo");
@@ -144,85 +155,6 @@ for (var i = 0; i < elementos.length; i++) {
     this.classList.toggle('selected');
   });
 }
-
-
-    /*function selecionarItem(className){
-        var fundos = document.getElementsByClassName("fundo" + className);
-        var valores = [];
-
-  for (var i = 0; i < fundos.length; i++) {
-    valores.push(fundos[i].value);
-  }
-
-  console.log(valores);
-    }*/
-    /*
-      var fundos = document.getElementsByClassName("fundo");
-
-for (var i = 0; i < fundos.length; i++) {
-  var fundo = fundos[i];
-
-  fundo.addEventListener("click", function() {
-    this.classList.toggle("selected");
-  });
-}*/
-/**/
-/*
-var fundos = document.getElementsByClassName("fundo");
-    var botaoRenderizado = document.getElementById("botaoRenderizado");
-
-    for (var i = 0; i < fundos.length; i++) {
-      var fundo = fundos[i];
-      var pTag = fundo.querySelector("p");
-
-      fundo.addEventListener("click", function() {
-        var conteudo = pTag.textContent;
-
-        if (this.classList.contains("selected")) {
-          this.classList.remove("selected");
-          botaoRenderizado.innerHTML = "";
-        } else {
-          this.classList.add("selected");
-          var botao = document.createElement("button");
-          botao.textContent = conteudo;
-          botaoRenderizado.appendChild(botao);
-
-          botao.addEventListener("click", function(event) {
-            event.preventDefault(); // Cancela o envio de parâmetros
-            fundo.classList.remove("selected"); // Remove a classe "selected"
-          });
-        }
-      });
-    }*/
-    
-   /* var items = document.getElementsByClassName("item");
-
-    for (var i = 0; i < items.length; i++) {
-      var item = items[i];
-      var pTag = item.parentNode.nextElementSibling.querySelector("p");
-
-      item.addEventListener("click", function() {
-        var conteudo = pTag.textContent;
-        var fundo = this.getAttribute("data-fundo");
-
-        if (this.classList.contains("selected")) {
-          this.classList.remove("selected");
-          botaoRenderizado.innerHTML = "";
-        } else {
-          this.classList.add("selected");
-          var botao = document.createElement("button");
-          botao.textContent = conteudo;
-          botao.classList.add("fundo" + fundo); // Adiciona a classe "fundoX" ao botão
-          botaoRenderizado.appendChild(botao);
-
-          botao.addEventListener("click", function(event) {
-            event.preventDefault(); // Cancela o envio de parâmetros
-            var fundoSelecionado = document.querySelector(".fundo" + fundo);
-            fundoSelecionado.classList.remove("selected"); // Remove a classe "selected"
-          });
-        }
-      });
-    }*/
 
     $(document).ready(function() {
       // Abrir a lateral ao clicar no botão
@@ -251,43 +183,6 @@ var fundos = document.getElementsByClassName("fundo");
     });
 
 
-    /*//header
-    window.addEventListener('DOMContentLoaded', function() {
-  var header = document.getElementById('header');
-  var topoDoSite = document.getElementById('topo-do-site').getBoundingClientRect().bottom;
-  var alturaRetorno = topoDoSite - header.offsetTop;
-
-  window.addEventListener('scroll', function() {
-    if (window.pageYOffset >= topoDoSite) {
-      header.classList.add('position-fixed');
-    } else {
-      header.classList.remove('position-fixed');
-    }
-    
-    if (window.pageYOffset < alturaRetorno) {
-      header.classList.remove('position-fixed');
-      header.style.top = '';
-    }
-  });
-});*/
-
-/*window.addEventListener('DOMContentLoaded', function() {
-  var header = document.getElementById('header');
-  var headerTop = header.offsetTop;
-
-  window.addEventListener('scroll', function() {
-    var currentScroll = window.pageYOffset;
-
-//console.log(currentScroll)
-console.log(headerTop)
-
-    if (currentScroll > headerTop) {
-      header.classList.add('fixed');
-    } else {
-      header.classList.remove('fixed');
-    }
-  });
-});*/
 window.addEventListener('DOMContentLoaded', function() {
   var header = document.getElementById('header');
 

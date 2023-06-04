@@ -14,11 +14,11 @@
                     <ol class="breadcrumb">
                         @foreach ($site->getBreadCrumbs() as $bread)
                             @if ($loop->last)
-                                <li class="breadcrumb-item p-22 fw-400 text-white" aria-current="{{ $bread->getText() }}">
+                                <li class="breadcrumb-item p-22 fw-400 text-white text-decoration-none" aria-current="{{ $bread->getText() }}">
                                     {{ $bread->getText() }}</li>
                             @else                               
                                 <li class="breadcrumb-item">
-                                    <a class="p-22 fw-400 text-white" href="{{ $bread->getUrl() }}">{{ $bread->getText() }}</a>
+                                    <a class="p-22 fw-400 text-white text-decoration-none" href="{{ $bread->getUrl() }}">{{ $bread->getText() }}</a>
                                 </li>
                             @endif
                         @endforeach

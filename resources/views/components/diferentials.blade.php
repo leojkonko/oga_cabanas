@@ -1,7 +1,7 @@
 <section class="diferenciais pt-lg-4 pt-2 bg-dark-claro">
     <div class="container position-relative">
         <div class="row">
-            <h2 class="text-center w-100 text-white mb-2 mb-lg-8 h2-80 fw-400">Nossos <span class="fw-800">DIFERENCIAIS</span></h2>
+            <h2 class="text-center w-100 text-white mb-2 mb-lg-8 h2-80 fw-400" data-aos="fade-down-right">Nossos <span class="fw-800">DIFERENCIAIS</span></h2>
             <div class="col-lg-10 m-auto">
                 <div class="overflow-x-clip diferenciais-swiper">
                     <div class="swiper-wrapper pb-4">
@@ -12,7 +12,7 @@
                         @php
                          $number++   
                         @endphp
-                            <div class="swiper-slide {{  $number % 2 === 0 ? 'elevar-card' : '' }}">
+                            <div class="swiper-slide {{  $number % 2 === 0 ? 'elevar-card' : '' }}" data-aos="zoom-out-up">
                                 <div class="ratio ratio-6x9">
                                     <img class="object-fit-cover w-100 h-100" src="{{ asset("front/images/backgrounds/diferenciais.png") }}" alt="">
                                 </div>    

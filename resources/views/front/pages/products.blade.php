@@ -8,12 +8,14 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-10 m-auto">
-                        <h2 class="text-white h2-80 fw-400 mb-2 text-lg-start text-center ">Nossa <br><span class="fw-800">CABANAS</span></h2>
+                        <h2 class="text-white h2-80 fw-400 mb-2 text-lg-start text-center ">Nossas <br><span class="fw-800">CABANAS</span></h2>
                         <div class="row">
                             @foreach (range(0,2) as $r)
                                 <div class="col-lg-4 mt-2 mt-lg-0">
                                     <div class="ratio ratio-6x9 mb-lg-4">
-                                        <a href="{{ route_lang('details') }}" class="cabana overflow-hidden z-index-1">
+                                        <a href="{{ route_lang('details') }}" class="cabana overflow-hidden z-index-1" data-aos="fade-down"
+                                        data-aos-easing="linear"
+                                        data-aos-duration="1500">
                                             <img class="object-fit-cover w-100 h-100" src="{{ asset("front/images/backgrounds/cabana-colorida.png") }}" alt="">
                                             <div class="bg-danger rounded-circle position-absolute mx-auto esfera"></div>
                                         </a>
@@ -29,8 +31,6 @@
                 <rect x="1" y="1" width="1168" height="827" stroke="#F5F5F5" stroke-width="2"/>
             </svg>                
         </section>
-
-
 
         {{--<x-catalog-card tipo="produtos" />--}}
 

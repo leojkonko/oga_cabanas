@@ -16,7 +16,7 @@
                             <source srcset="{{ asset("front/images/backgrounds/banner.png") }}" media="(min-width: 767px)">
                                 <div class="position-absolute top-50 top-40 start-50 text-start w-100 translate-middle">
                                     <div class="container">
-                                        <div class="col-lg-8 col-xl-6 col-xxl-4">
+                                        <div class="col-lg-8 col-xl-6 col-xxl-4" data-aos="fade-right">
                                             <h2 class="text-white h2-50 fw-400 mt-lg-3 mt-xl-0 w-100 text-center text-lg-start">O <span class="fw-800">refúgio perfeito</span> para vivier dias incríveis!</h2>
                                             <p class="text-white mt-1 p-24 fw-400 text-center text-lg-start d-none d-sm-block">Uma verdadeira experiência, desde o primeiro contato até o uso do imóvel.</p>
                                         </div>

@@ -21,7 +21,7 @@
                     <div class="col-lg-7 ">
                         <div class="position-relative h-100 w-100 ms-xxl-4 ps-xxl-4 d-flex align-items-center justify-content-center">
                                
-                            <div class="ms-lg-4">
+                            <div class="ms-lg-4" data-aos="fade-left">
                                 <h2 class="P-400 h2-80 fw-400 mb-lg-2 mb-1 text-lg-start text-center mt-2 mt-lg-0">Conheça a <span class="fw-800">ÓGA</span></h2>
                                 <div class="w-100 position-relative">
                                     <svg class="position-absolute bottom-0 end-0 object-fit-contain z-index-background" width="960" height="235" viewBox="0 0 960 235" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -44,10 +44,10 @@
         <section class="atuacao py-lg-4 py-2">
             <div class="container">
                 <div class="row g-0">
-                    <div class="col-lg-7 ">
+                    <div class="col-lg-7 " data-aos="fade-right">
                         <div class="position-relative h-100 w-100 d-flex align-items-center justify-content-center">
-                            <div class="">
-                                <h2 class="p-400 h2-80 fw-400 mb-lg-2 text-lg-start text-center ps-lg-4 m-0 mb-1">Atendemos o <br> <span class="fw-800">BRASIL INTEIRO</span></h2>
+                            <div class="" data-aos="fade-right">
+                                <h2 class="p-400 h2-80 fw-400 mb-lg-2 text-lg-start text-center ps-lg-4 m-0 mb-1">Atendemos toda <br> <span class="fw-800">A REGIÃO SUL</span></h2>
                                 <div class="w-100 position-relative">
                                     <svg class="position-absolute top-0 start-0 start-lg-5 object-fit-contain z-index-background" width="787" height="419" viewBox="0 0 787 419" fill="none" xmlns="http://www.w3.org/2000/svg">
                                         <line y1="-1" x2="786.001" y2="-1" transform="matrix(0.999999 -0.0011869 0.00152623 0.999999 1 3.86719)" stroke="#2B2B2B" stroke-width="2"/>
@@ -66,7 +66,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-5 position-relative ">
+                    <div class="col-lg-5 position-relative " data-aos="fade-left">
                         <div class="mt-4 mt-lg-0" style="background:#f5f5f5">
                             <div class="ratio ratio-1x1 border border-dark rounded-circle border-2">
                                 <img class="object-fit-cover w-100 h-100" src="{{ asset("front/images/backgrounds/mapa.png") }}" alt="">
@@ -95,12 +95,12 @@
             <div class="mt-xxl-5">
                 <div class="container container-start">
                     <div class="row">
-                        <div class="col-lg-4 d-none d-lg-block">
+                        <div class="col-lg-4 d-none d-lg-block" data-aos="fade-right">
                             <div class="ratio ratio-84">
                                 <img class="object-fit-cover w-100 h-100 pe-lg-4" src="{{ asset("front/images/backgrounds/personalize2.png") }}" alt="">
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="zoom-in-up">
                             <div class="pe-xl-2 pe-xxl-6 ps-xl-3 ps-xxl-0-50 position-relative text-lg-start text-center pb-2 pb-lg-0">
                                 <h2 class="p-400 h2-80 fw-400 mt-lg-6 mb-lg-3 text-personalize text-white position-absolute start-0 d-none d-xxl-block"><span class="fw-800">PERSONALIZE A SUA CABANA</span> para uma experiênica única</h2>
                                 <p class="p-22 fw-400 text-white">Nossas cabanas são entregues com funcionalidades que vão atender todas as suas necessidades.</p>
@@ -113,7 +113,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="col-lg-4">
+                        <div class="col-lg-4" data-aos="fade-right">
                             <div class="ratio ratio-84">
                                 <img class="object-fit-cover w-100 h-100 ps-lg-2" src="{{ asset("front/images/backgrounds/personalize3.png") }}" alt="">
                             </div>
@@ -133,11 +133,11 @@
                                     <div class="swiper-slide d-lg-flex">
                 
                                         <div class="col-lg-8">
-                                            <div class="py-lg-6 px-lg-4 position-relative text-lg-start text-center p-1">
+                                            <div class="py-lg-6 px-lg-4 position-relative text-lg-start text-center p-1" data-aos="zoom-out-down">
                                                 <h2 class="h2-80 fw-800 text-white text-lg-start text-center">Depoimentos</h2>
                                                 <p class="p-22 fw-400 text-white pe-lg-4 pt-lg-2 mt-1">Tive o prazer de trabalhar em conjunto da Óga Cabanas. Extremamente profissionais e comprometidos, trabalho excelente, com uma qualidade acima do esperado no mercado de telhas. 
                                                     Recomendo de olhos fechados, deu ótimos resultados na vinícola, todos amam este novo conceito!</p>
-                                                <div class="d-flex align-items-center pt-lg-2 mt-2">
+                                                <div class="d-flex align-items-center pt-lg-2 mt-2" data-aos="zoom-in-up">
                                                     <div class="quadrado">
                                                         <div class="ratio ratio-1x1">
                                                             <img class="object-fit-cover w-100 h-100 rounded-circle" src="{{ asset("front/images/backgrounds/depoimento.png") }}" alt="">  
@@ -166,7 +166,7 @@
                                             </div>                                               
                                         </div>
                                         <div class="col-lg-4 g-0">
-                                            <div class="ratio ratio-125 mt-lg-10 mt-2">
+                                            <div class="ratio ratio-125 mt-lg-10 mt-2" data-aos="zoom-in-up">
                                                 <img class="object-fit-cover w-100 h-100 z-index-background" src="{{ asset("front/images/backgrounds/depoimentos.png") }}" alt="">
                                             </div>
                                         </div>
