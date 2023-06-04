@@ -106,7 +106,7 @@
                                         <button type="submit" class="btn btn-outline-light p-20 fw-400 rounded-0">
                                             <span wire:loading.remove>
                                                 ENVIAR
-                                            </span>
+                                            </span> 
                                             <span wire:loading.inline>
                                                 Aguarde...
                                             </span>

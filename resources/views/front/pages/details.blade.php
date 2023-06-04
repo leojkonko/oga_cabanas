@@ -164,7 +164,7 @@
                                             <input class="form-check-input mt-0-50" type="checkbox" value="1" wire:model.defer="accept" id="termosCheck" required>
                                             <label class="form-check-label text-dark ms-0-50" for="termosCheck">
                                                 <x-accept-text />
-                                            </label>
+                                             </label>
                                         </div>
                                     </div>
                                     <div class="col-12 d-flex justify-content-center justify-content-lg-start">

@@ -19,7 +19,7 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 
-    {{-- Fonte temporária --}}
+    {{-- Fonte temporária --}} 
         <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;700;800&family=Inter:wght@400;600;700&family=Lora:ital@1&family=Manrope:wght@400;700;800&family=Montserrat:wght@400;600;700&family=Poppins&display=swap" rel="stylesheet">

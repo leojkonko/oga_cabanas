@@ -146,7 +146,7 @@
                                                     <p class="p-22 fw-400 text-white ms-1"><span class="fw-800">Luís Almeida</span>
                                                     <br>
                                                     CEO da Vinícola Valduga
-                                                    </p>
+                                                    </p> 
                                                 </div>
                                                 <div class="position-relative w-150 mt-lg-4 pt-4">
                                                     <div class="swiper-button-prev bg-laranja rounded-circle top-55 start-5">

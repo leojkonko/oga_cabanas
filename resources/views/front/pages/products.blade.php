@@ -6,7 +6,7 @@
 
         <section class="cabanas bg-dark py-lg-4 py-2 pb-4 position-relative">
             <div class="container">
-                <div class="row">
+                <div class="row"> 
                     <div class="col-lg-10 m-auto">
                         <h2 class="text-white h2-80 fw-400 mb-2 text-lg-start text-center ">Nossas <br><span class="fw-800">CABANAS</span></h2>
                         <div class="row">
